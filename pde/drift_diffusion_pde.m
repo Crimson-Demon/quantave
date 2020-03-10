@@ -6,7 +6,7 @@ classdef drift_diffusion_pde
     zero;
   endproperties
 
-  methods
+  methods (Access = protected)
     function pde = drift_diffusion_pde(drift, diffusion, source, zero)
       pde.drift = drift;
       pde.diffusion = diffusion;

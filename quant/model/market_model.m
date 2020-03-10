@@ -5,7 +5,7 @@ classdef market_model
     interest_rate_process;
   endproperties
 
-  methods
+  methods (Access = protected)
     function model = market_model(asset_process, volatility_process, interest_rate_process)
       model.asset_process = asset_process;
       model.volatility_process = volatility_process;

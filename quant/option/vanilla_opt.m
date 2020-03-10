@@ -5,7 +5,7 @@ classdef vanilla_opt
     call;
   endproperties
 
-  methods
+  methods (Access = protected)
     function option = vanilla_opt(strike, ttm, call)
       option.strike = strike;
       option.ttm = ttm;
