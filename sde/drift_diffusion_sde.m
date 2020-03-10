@@ -1,4 +1,4 @@
-classdef drift_diffusion
+classdef drift_diffusion_sde
   properties (Access = public)
     x0;
     drift;
@@ -7,7 +7,7 @@ classdef drift_diffusion
   endproperties
 
   methods (Access = public)
-    function sde = drift_diffusion(x0, drift, diffusion, ddiffusion)
+    function sde = drift_diffusion_sde(x0, drift, diffusion, ddiffusion)
       if (nargin == 0)
         return;
       endif

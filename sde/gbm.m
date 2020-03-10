@@ -1,4 +1,4 @@
-classdef gbm < drift_diffusion
+classdef gbm < drift_diffusion_sde
   properties (Access = public)
     mu;
     sigma;

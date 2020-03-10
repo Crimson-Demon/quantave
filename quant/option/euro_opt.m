@@ -9,8 +9,8 @@ classdef euro_opt < vanilla_opt
       option.call = call;
     endfunction
 
-    function val = payoff(s)
-      val = call * max(s - strike, 0) + (1 - call) * max(strike - s, 0); 
+    function val = payoff(opt, s)
+      val = opt.call * max(s - opt.strike, 0) + (1 - opt.call) * max(opt.strike - s, 0); 
     endfunction
   endmethods
 endclassdef

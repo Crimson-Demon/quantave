@@ -9,8 +9,8 @@ classdef am_opt < euro_opt
       option.call = call;
     endfunction
 
-    function val = payoff(v, c)
-      val = max(v, c);
+    function val = payoff(opt, s, c)
+      val = max(opt.payoff(s), c);
     endfunction
   endmethods
 endclassdef

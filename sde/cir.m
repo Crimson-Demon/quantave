@@ -1,4 +1,4 @@
-classdef cir
+classdef cir < drift_diffusion_sde
   properties (Access = public)
     kappa;
     theta;
